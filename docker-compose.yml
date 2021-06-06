@@ -1,0 +1,9 @@
+Version: x
+services:
+  build: ./docker
+  image: x
+  volumes:
+    - ./docker:
+    - ./appliction: /directory
+  ports:
+    - 8000:8000
