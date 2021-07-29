@@ -1,5 +1,5 @@
 # cs4843-cloud-application
-### #TeamBjern
+## #TeamBjern
 
 We gon do some Rock Paper Scissors
 

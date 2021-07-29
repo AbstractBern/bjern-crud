@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<head>
+    <!-- This is your page's title! This is what will be shown on the top of the screen and on Google -->
+    <title>CRUD</title>
+
+    <link rel="shortcut icon" type="x-icon" href="assets/images/Folder-Data.ico">
+
+    <!-- CSS is how you style a website.Included are Bootstrap's CSS file and one you may edit yourself! -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="./assets/css/styles.css" rel="stylesheet"> <!-- you can edit this file and include your own styles! -->
+
+    <!-- This is metadata; it is used to specify useful things such as keywords and a website description -->
+    <meta charset="UTF-8">
+    <meta name="keywords" content="crud, database, class, project">
+    <meta name="description" content="Crud application for a class project">
+    <meta name="author" content="Bernardo Flores, Jace Stark, Eloy Rodriguez, Robert Quintanilla, Nicolas Ruiz">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<!-- Anything in the body is visible on your website -->
+
+<body>
+
+    <!-- This is your Navbar! It shows links at the top of the page! -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./main.html">CRUD</a>
+
+            <!-- This is Bootstrap witchcraft 🧙‍♀️! Automatically hides navbar on mobile and adds a button to open it!-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./authors.html">Authors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./main.html">🔴 Link 2</a>
+                    </li>
+            </div>
+        </div>
+    </nav>
+
+    <br />
+
+    <!-- This is a container! Automaticaly uses a magic indent to keep you content away from the sides! -->
+    <div class="container">
+        <h1>Authors ✍🏽</h1>
+
+        <!-- This is an example of a responsive two column layout! -->
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <!-- Example card for you and your teamates -->
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/images/team/default-pfp.png" class="card-img-top"
+                        alt="🔴 Adding alt text for accessibility is good practice">
+                    <div class="card-body">
+                        <h5 class="card-title">Bernardo Flores</h5>
+                        <p class="card-text">🔴 Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's
+                            content.</p>
+                        <a href="https://github.com/MrSyn88/mlh-bootsrap-starter-kit" class="btn btn-primary">🔴 Go
+                            somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Example card for you and your teamates -->
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/images/team/default-pfp.png" class="card-img-top"
+                        alt="🔴 Adding alt text for accessibility is good practice">
+                    <div class="card-body">
+                        <h5 class="card-title">Jace Stark</h5>
+                        <p class="card-text">🔴 Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's
+                            content.</p>
+                        <a href="https://github.com/MrSyn88/mlh-bootsrap-starter-kit" class="btn btn-primary">🔴 Go
+                            somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <!-- Example card for you and your teamates -->
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/images/team/default-pfp.png" class="card-img-top"
+                        alt="🔴 Adding alt text for accessibility is good practice">
+                    <div class="card-body">
+                        <h5 class="card-title">Robert Quintanilla</h5>
+                        <p class="card-text">🔴 Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's
+                            content.</p>
+                        <a href="https://github.com/MrSyn88/mlh-bootsrap-starter-kit" class="btn btn-primary">🔴 Go
+                            somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <!-- Example card for you and your teamates -->
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/images/team/default-pfp.png" class="card-img-top"
+                        alt="🔴 Adding alt text for accessibility is good practice">
+                    <div class="card-body">
+                        <h5 class="card-title">Eloy Rodriguez</h5>
+                        <p class="card-text">🔴 Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's
+                            content.</p>
+                        <a href="https://github.com/MrSyn88/mlh-bootsrap-starter-kit" class="btn btn-primary">🔴 Go
+                            somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 col-lg-12">
+                <!-- Example card for you and your teamates -->
+                <div class="card" style="width: 18rem;">
+                    <img src="./assets/images/team/default-pfp.png" class="card-img-top"
+                        alt="🔴 Adding alt text for accessibility is good practice">
+                    <div class="card-body">
+                        <h5 class="card-title">Nicolas Ruiz</h5>
+                        <p class="card-text">🔴 Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's
+                            content.</p>
+                        <a href="https://github.com/MrSyn88/mlh-bootsrap-starter-kit" class="btn btn-primary">🔴 Go
+                            somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- This is Bootstrap's Javascript! Including it is what will make your website's interactive stuff work! -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- You might want to include your own scripts too! Included in here is an example file with one! -->
+    <script src="./assets/js/scripts.js"></script>
+</body>
