@@ -1,7 +1,7 @@
 # cs4843-cloud-application
 ## #TeamBjern
 
-We gon do some Rock Paper Scissors
+We love our foodies
 
 ## Contributors
 - ***B***ernardo Flores
