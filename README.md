@@ -1,8 +1,6 @@
 # cs4843-cloud-application
 ## #TeamBjern
-CRUD Foodies
-
-We love our foodies
+CRUD API using Nodejs, Express, and MySQL
 
 ## Contributors
 - ***B***ernardo Flores
