@@ -2,9 +2,9 @@
 
 <head>
     <!-- This is your page's title! This is what will be shown on the top of the screen and on Google -->
-    <title>CRUD</title>
+    <title>BJERN</title>
 
-    <link rel="shortcut icon" type="x-icon" href="assets/images/Folder-Data.ico">
+    <link rel="shortcut icon" type="x-icon" href="assets/images/BJERN.ico">
 
     <!-- CSS is how you style a website.Included are Bootstrap's CSS file and one you may edit yourself! -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -24,9 +24,9 @@
 <body>
 
     <!-- This is your Navbar! It shows links at the top of the page! -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">CRUD</a>
+            <a class="navbar-brand" href="./index.html"><img width="50" height="50" src="assets/images/BJERN.ico"></a>
 
             <!-- This is Bootstrap witchcraft 🧙‍♀️! Automatically hides navbar on mobile and adds a button to open it!-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -37,10 +37,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./authors.html">Authors</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">🔴 Link 2</a>
+                        <a class="nav-link active" aria-current="page" href="./team.html">Team</a>
                     </li>
             </div>
         </div>
@@ -50,71 +47,41 @@
 
     <!-- This is a container! Automaticaly uses a magic indent to keep you content away from the sides! -->
     <div class="container">
-        <h1>CRUD Application 👏</h1>
-
-        <!-- This is an example of a responsive two column layout! -->
-        <div class="row">
-            <div class="col-12 col-lg-8">
-                <!-- Placeholder paragraphs -->
-                <p>🔴Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, illo? Libero laborum quod dolore
-                    necessitatibus, esse et pariatur, quis quam, ipsa a repudiandae! Aliquid sapiente corporis in eaque
-                    reprehenderit pariatur?</p>
-                <p>🔴Lorem ipsum dolor sit amet consectetur adipisicing elit. Non commodi optio nobis nostrum recusandae
-                    voluptatem laudantium, voluptates dicta id tenetur asperiores praesentium consequatur iste? Corporis
-                    odit libero rerum placeat ab?</p>
-                <p>🔴Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptatum recusandae, aperiam rem
-                    architecto nobis vel iusto quisquam incidunt velit eveniet et, sapiente adipisci molestiae in magnam
-                    necessitatibus consequuntur cupiditate?</p>
-                <p>🔴Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis architecto iure voluptate dicta,
-                    voluptatibus id officiis repudiandae perspiciatis unde, odio quisquam perferendis dolore facilis
-                    qui. Voluptate incidunt minus neque quia.</p>
-                <p>🔴Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam reiciendis labore numquam
-                    quibusdam
-                    obcaecati cumque ut in corporis voluptatem dicta. Eum eius atque minus distinctio harum est ipsa,
-                    vel commodi.</p>
-                <p>🔴Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea totam doloribus, adipisci blanditiis,
-                    ipsum fugit veritatis est facere nostrum minima perspiciatis ex a temporibus minus unde laborum
-                    quam? Aspernatur, tempora?</p>
-                <p>🔴Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, libero facilis quis nobis quam
-                    quia nesciunt doloremque possimus ipsam, animi ab pariatur ipsum eius minima maiores aperiam enim,
-                    laborum est?</p>
-                <p>🔴Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet molestiae voluptatibus facere a earum
-                    ab omnis qui fuga inventore, libero commodi quae sequi officia veritatis, quis repudiandae dolorum
-                    ex error.</p>
+        <div class="d-flex bd-highlight mb-3">
+            <div class="me-auto p-2 bd-highlight">
+                <h2>CRUD Applicatian
             </div>
-            <div class="col-12 col-lg-4">
-                <!-- Example card for you and your teamates -->
-                <div class="card" style="width: 18rem;">
-                    <img src="./assets/images/team/default-pfp.png" class="card-img-top"
-                        alt="🔴 Adding alt text for accessibility is good practice">
-                    <div class="card-body">
-                        <h5 class="card-title">🔴 name here</h5>
-                        <p class="card-text">🔴 Some quick example text to build on the card title and make up the bulk
-                            of
-                            the card's
-                            content.</p>
-                        <a href="https://github.com/AbstractBern/cs4843-cloud-application" class="btn btn-primary">🔴 Go
-                            somewhere</a>
-                    </div>
-                </div>
-
-                <!-- Example list group that you can put links on -->
-                <ul class="list-group">
-                    <li class="list-group-item"><a href="https://mlh.io">MLH</a></li>
-                    <li class="list-group-item"><a href="https://mlh.io/about">About MLH</a></li>
-                    <li class="list-group-item"><a href="https://init.mlh.io">INIT</a></li>
-                    <li class="list-group-item"><a href="https://init.mlh.io/challenges">Challenges</a></li>
-                    <li class="list-group-item"><a href="https://hack.mlh.io/learn/">More Starter Kits</a></li>
-                </ul>
+            <div class="p-2 bd-highlight">
+                <button type="button" class="btn btn-secondary" onclick="showUserCreateBox()">Create</button>
             </div>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Avatar</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Username</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody id="mytable">
+                    <tr>
+                        <th scope="row" colspan="5">Loading...</th>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 
+    <!-- You might want to include your own scripts too! Included in here is an example file with one! -->
+    <script src="./assets/js/index.js"></script>
     <!-- This is Bootstrap's Javascript! Including it is what will make your website's interactive stuff work! -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-
-    <!-- You might want to include your own scripts too! Included in here is an example file with one! -->
-    <script src="./assets/js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.16/dist/sweetalert2.all.min.js"></script>
 </body>
