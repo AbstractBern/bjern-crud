@@ -12,3 +12,6 @@ Click on github-pages and click on the latest deployment
 - ***E***loy Rodriguez
 - ***R***obert Quintanilla
 - ***N***icolas Ruiz
+
+## References
+[JavaScript Crud Tutorial](https://javascript.plainenglish.io/basic-html-css-javascript-bootstrap-5-using-external-api-for-crud-operations-1a7349ab95b2)
