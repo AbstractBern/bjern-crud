@@ -1,6 +1,12 @@
-/* This is where you'll write your CSS!
-CSS is how you style your website, such as
-setting colors, changing the width and
-height of things, and beyond! The project
-also includes Bootstrap's CSS  so you can
-use that without typing it in here! */
+.bg-mynav {
+  background-color: #2c3e50;
+}
+
+body {
+  font-size: 1.25rem;
+  background-color: #dcedef;
+}
+
+td {
+    line-height: 3rem;
+}
