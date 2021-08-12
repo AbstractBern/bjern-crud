@@ -4,7 +4,7 @@ CRUD API using Nodejs, Express, and MySQL
 Webpage html using Bootstrap
 
 ## To View
-Click on github pages and click on the latest deployment
+Click on github-pages and click on the latest deployment
 
 ## Contributors
 - ***B***ernardo Flores
