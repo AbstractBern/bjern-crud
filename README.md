@@ -1,4 +1,4 @@
-# cs4843-cloud-application
+# Cloud CRUD Application
 ## #TeamBjern
 CRUD API using Nodejs, Express, and MySQL  
 Webpage html using Bootstrap
