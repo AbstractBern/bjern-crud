@@ -48,7 +48,7 @@ function userCreate() {
     const email = document.getElementById("email").value;
 
     const xhttp = new XMLHttpRequest();
-    xhttp.open("POST", "https://bjern-api.herokuapp.com/users");
+    xhttp.open("POST", "https://bjern-api.herokuapp.com/users/create");
     xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhttp.send(JSON.stringify({
         "fname": fname, "lname": lname, "username": username, "email": email,
@@ -98,7 +98,7 @@ function userEdit() {
     const email = document.getElementById("email").value;
 
     const xhttp = new XMLHttpRequest();
-    xhttp.open("PUT", "https://bjern-api.herokuapp.com/users");
+    xhttp.open("PUT", "https://bjern-api.herokuapp.com/users/update");
     xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhttp.send(JSON.stringify({
         "id": id, "fname": fname, "lname": lname, "username": username, "email": email,
@@ -115,7 +115,7 @@ function userEdit() {
 
 function userDelete(id) {
     const xhttp = new XMLHttpRequest();
-    xhttp.open("DELETE", "https://bjern-api.herokuapp.com/users");
+    xhttp.open("DELETE", "https://bjern-api.herokuapp.com/users/delete");
     xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhttp.send(JSON.stringify({
         "id": id
