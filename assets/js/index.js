@@ -1,6 +1,6 @@
 function loadTable() {
     const xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "https://www.mecallapi.com/api/users");
+    xhttp.open("GET", "https://bjern-api.herokuapp.com/users");
     xhttp.send();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
@@ -48,7 +48,7 @@ function userCreate() {
     const email = document.getElementById("email").value;
 
     const xhttp = new XMLHttpRequest();
-    xhttp.open("POST", "https://www.mecallapi.com/api/users/create");
+    xhttp.open("POST", "https://bjern-api.herokuapp.com/users");
     xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhttp.send(JSON.stringify({
         "fname": fname, "lname": lname, "username": username, "email": email,
@@ -66,7 +66,7 @@ function userCreate() {
 function showUserEditBox(id) {
     console.log(id);
     const xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "https://www.mecallapi.com/api/users/" + id);
+    xhttp.open("GET", "https://bjern-api.herokuapp.com/users" + id);
     xhttp.send();
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200) {
@@ -98,7 +98,7 @@ function userEdit() {
     const email = document.getElementById("email").value;
 
     const xhttp = new XMLHttpRequest();
-    xhttp.open("PUT", "https://www.mecallapi.com/api/users/update");
+    xhttp.open("PUT", "https://bjern-api.herokuapp.com/users");
     xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhttp.send(JSON.stringify({
         "id": id, "fname": fname, "lname": lname, "username": username, "email": email,
@@ -115,7 +115,7 @@ function userEdit() {
 
 function userDelete(id) {
     const xhttp = new XMLHttpRequest();
-    xhttp.open("DELETE", "https://www.mecallapi.com/api/users/delete");
+    xhttp.open("DELETE", "https://bjern-api.herokuapp.com/users");
     xhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhttp.send(JSON.stringify({
         "id": id
